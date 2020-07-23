@@ -2,7 +2,7 @@ const chalk = require('chalk')
 
 const log = console.log;
 
-log(chalk.red.bgBlue.bold('Success'))
+log(chalk.red.bold('Failed'))
 
 log(chalk.keyword('orange')('Yay for orange colored text!'));
 log(chalk.rgb(123, 45, 67).underline('Underlined reddish color'));
