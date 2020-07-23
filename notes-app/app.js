@@ -1,14 +1,22 @@
-// first we need to require the modules through 'require' method ( can be core, npm, own modules)
+// Challenge Time
+// creating separate notes.js file and a function which would print 'My notes to the console'
+const notesFile = require('./notes.js')
 
-const fs = require('fs')
+const notes = notesFile()
 
-// fs.writeFileSync('notes.txt', 'This file was created by Node JS.')
-
-// fs.writeFileSync and writeFile are responsible for writing data to a file.
-// if the file does not exist it will be created, if exist then it will overwrite.
+console.log(notes)
 
 
-// Challenge : Append A message to notes.txt
-// using appendFileSync and the check the file for results.
+// // require('./utility.js') // it will log out first because it happening first.
+// // const lastName = require('./utility.js') // it will log out first because it happening first.
+// const addNum = require('./utility.js') // it will log out first because it happening first.
 
-fs.appendFileSync('notes.txt', 'I am currently learning node js.')
+// // const name = 'Mizan'
+
+// const sum = addNum(5, 4)
+
+// // console.log(lastName) // it will log out later because it happening later.
+// console.log(sum) // it will log out later because it happening later.
+
+// // modules have their own scopes. 
+// // app.js can not access variables from utility.js
